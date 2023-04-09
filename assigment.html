@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+	<script src="index.js"></script>
+</head>
+<title>Admission Form</title>
+<body>
+	<form>
+		<div id="page-1" style="display: inline;">
+			<h2>
+				<center>ADDMISSION FORM</center>
+			</h2>
+			<label>*Name*:</label>
+			<input type="text" name="sname" placeholder="your name" id="sn"><br><br>
+			<label>*Last Name*:</label>
+			<input type="text" name="lname" placeholder="your last name" id="ln"><br><br>
+			<label>*Date of birth*:</label>
+			<input type="date"><br><br>
+			<label>*Contact No*:</label>
+			<input type="text"><br><br>
+			<label>*Gender*:</label>
+			<input type="radio" name="gender" value="Male">Male
+			<input type="radio" name="gender" value="Female">Female
+			<input type="radio" name="gender" value="Others">Others<br><br>
+			<label>*Address*:</label>
+			<input type="text"><br><br>
+			<label>*Nationality*:</label>
+			<input type="radio" name="nationality" value="Indian">Indian
+			<input type="radio" name="nationality" value="American">American
+			<input type="radio" name="nationality" value="Dutch">Dutch
+			<input type="radio" name="nationality" value="Others">Others<br><br>
+
+			<label>*State*:</label>
+			<select>
+				<option>West Bengal</option>
+				<option>Delhi</option>
+				<option>Uttar Pradesh</option>
+				<option>Others</option><br><br>
+			</select><br><br>
+			<button type="button" onclick="prevPage();">Previous</button>
+			<button type="button" onclick="nextPage();">Next</button>
+		</div>
+		<div id="page-2" style="display: none;">
+			<center>
+				<h2>SIGN IN</h2>
+			</center>
+			<label>*User Name*:</label>
+			<input type="text" name="dname" placeholder="your username" autofocus="on" id="dn"><br><br>
+			<label for="emails">*Enter Your Email Id*:</label>
+			<input type="email" name="emails" id="Email" placeholder="your mail id" autofocus="on" multiple><br><br>
+			<label>*Phone Number*:</label>
+			<input type="text" name="" autofocus="on" placeholder="your contact no"><br><br>
+			<label for="pwd">*Password*:</label>
+			<input type="password" name="" placeholder="enter your paasword"><br><br>
+			<!--Submit button-->
+			<button type="submit">Login</button>
+			<p class="register">Not a member? <a href="#">Register here!</a></p>
+			<button type="button" onclick="prevPage();">Previous</button>
+			<button type="button" onclick="nextPage();">Next</button>
+		</div>
+	</form>
+</body>
+
+</html>
